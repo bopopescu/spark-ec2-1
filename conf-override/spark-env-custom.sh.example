@@ -1,0 +1,8 @@
+### lingk
+#### The transformer will communicate with various AWS services (SQS and in some cases S3) using these credentials
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+
+###### API Key and Secret to use when communicating with Lingk APIs
+export LINGK_API_KEY=
+export LINGK_API_SECRET=
