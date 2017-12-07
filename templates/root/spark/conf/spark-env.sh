@@ -8,6 +8,7 @@ if [ -n "{{spark_worker_instances}}" ]; then
   export SPARK_WORKER_INSTANCES={{spark_worker_instances}}
 fi
 export SPARK_WORKER_CORES=256 
+export SPARK_WORKER_MEMORY=3g
 
 export HADOOP_HOME="/root/ephemeral-hdfs"
 export SPARK_MASTER_IP={{active_master}}
