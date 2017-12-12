@@ -884,19 +884,19 @@ def setup_cluster(conn, master_nodes, slave_nodes, opts, deploy_ssh_key):
         modules=modules
     )
 
-    deploy_user_files_to_path(
-        root_dir=SPARK_EC2_DIR + "/" + "conf-override",
-        opts=opts,
-        master_nodes=master_nodes,
-        path="/root"
-    )
+#    deploy_user_files_to_path(
+#        root_dir=SPARK_EC2_DIR + "/" + "conf-override",
+#        opts=opts,
+#        master_nodes=master_nodes,
+#        path="/root"
+#    )
 
-    deploy_user_files_to_path(
-        root_dir=SPARK_EC2_DIR + "/" + "conf-override",
-        opts=opts,
-        master_nodes=slave_nodes,
-        path="/root"
-    )
+#    deploy_user_files_to_path(
+#        root_dir=SPARK_EC2_DIR + "/" + "conf-override",
+#        opts=opts,
+#        master_nodes=slave_nodes,
+#        path="/root"
+#    )
 
     if opts.deploy_root_dir is not None:
         print("Deploying {s} to master...".format(s=opts.deploy_root_dir))
