@@ -67,3 +67,5 @@ export HADOOP_JOBTRACKER_USER=hadoop
 export HADOOP_TASKTRACKER_USER=hadoop
 
 ulimit -n 16000
+
+export HADOOP_ROOT_LOGGER=INFO,RFA
